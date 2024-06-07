@@ -1,3 +1,4 @@
+```
 import cv2 as cv
 import numpy as np
 import yt_dlp
@@ -5,7 +6,9 @@ import os
 faces  = ['enojado', 'feliz','sorprendido', 'triste']
 LBPHFace = cv.face.LBPHFaceRecognizer_create()
 LBPHFace.read('emociones_lbph.xml')
+```
 
+```
 cap = cv.VideoCapture(0)
 rostro = cv.CascadeClassifier(cv.data.haarcascades +'haarcascade_frontalface_alt.xml')
 while True:
@@ -30,3 +33,4 @@ while True:
         break
 cap.release()
 cv.destroyAllWindows()
+```
