@@ -1,11 +1,12 @@
+```
 import numpy as np
 import cv2 as cv
 import os
-image = cv.imread(r'E:\\IA\\Proyectos\\proyecto2_wally\\wally3.png')
+image = cv.imread(r'C:\\Users\\zamud\\Desktop\\wally\\wally3.png')
 
 gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 
-wally = cv.CascadeClassifier(r'E:\\IA\\Proyectos\\proyecto2_wally\\wallycascade.xml')
+wally = cv.CascadeClassifier(r'C:\\Users\\zamud\\Desktop\\wally\\wallycascade.xml')
 
 waldo_detections = wally.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=3, minSize=(5,5))
 
@@ -17,3 +18,4 @@ for (x, y, w, h) in waldo_detections:
 cv.imshow('¿Donde esta Wally?', image)
 cv.waitKey(0)
 cv.destroyAllWindows()
+```

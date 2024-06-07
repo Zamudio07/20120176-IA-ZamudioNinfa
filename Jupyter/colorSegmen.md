@@ -1,12 +1,4 @@
-# COLOR SEGMENTATION IN VIDEO
-
-
-```python
-De igual forma que con las imagenes, se hace una mascara con el rango de colores desaeados.
 ```
-
-
-```python
 import cv2 as cv
 
 cap = cv.VideoCapture(0)
@@ -26,7 +18,7 @@ cv.destroyAllWindows()
 ```
 
 
-```python
+```
 import cv2 as cv
 
 
@@ -49,10 +41,7 @@ cap.release()
 cv.destroyAllWindows()
 ```
 
-Podemos localizar la coordenada donde está el objeto. Lo ideal es analizar la máscara (Que es donde se mueve el objeto segmentado).
-
-
-```python
+```
 import cv2 as cv
 cap = cv.VideoCapture(0)
 while(True):
@@ -74,7 +63,7 @@ cv.destroyAllWindows()
 ```
 
 
-```python
+```
 import cv2 as cv
 import numpy as np
 
@@ -128,10 +117,5 @@ while True:
     break
 cap.release()
 cv.destroyAllWindows()
-
-```
-
-
-```python
 
 ```

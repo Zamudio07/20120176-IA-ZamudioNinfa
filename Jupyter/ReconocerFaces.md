@@ -1,9 +1,4 @@
-# FacialRecognize
-
-mediante el archivo xml puedes reconocer ciertos patrones asociados a un rostro.
-
-
-```python
+```
 import cv2 as cv
 
 cap = cv.VideoCapture(0)
@@ -26,17 +21,15 @@ cv.destroyAllWindows()
 ```
 
 
-```python
+```
 import numpy as np
 import cv2 as cv
 import math
-rostro = cv.CascadeClassifier('C:\\Users\\Jorgi\\Desktop\\Inteligencia Artificial\\haarcascade_frontalface_alt.xml')
-#rostro = cv.CascadeClassifier('C:\\Users\\Jorgi\\Pictures\\haarcascade_frontalface_alt.xml')
-#rostro = cv.CascadeClassifier('C:\\Users\\Px Angel\\Documents\\IA\\Material\\haarcascade_frontalface_alt.xml')
+rostro = cv.CascadeClassifier('C:\\Users\\zamud\\Desktop\\IA\\haarcascade_frontalface_alt.xml')
 ```
 
 
-```python
+```
 cap = cv.VideoCapture(0)
 while True:
     ret, frame = cap.read()
@@ -50,9 +43,4 @@ while True:
         break
 cap.release()
 cv.destroyAllWindows()
-```
-
-
-```python
-
 ```
